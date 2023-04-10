@@ -6,7 +6,7 @@ import dts from "rollup-plugin-dts";
 // To handle css files
 import postcss from "rollup-plugin-postcss";
 
-import { terser } from "rollup-plugin-minification";
+import terser from "@rollup/plugin-terser";
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import image from '@rollup/plugin-image';
 

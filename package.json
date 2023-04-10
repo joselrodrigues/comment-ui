@@ -1,6 +1,9 @@
 {
   "name": "@joselrodrigues/comment-ui",
-  "version": "1.0.0",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/joselrodrigues"
+  },
+  "version": "2.0.0",
   "description": "A versatile and extensible React design system library tailored for building engaging and accessible comment interfaces. Featuring a comprehensive set of UI components, responsive design, and seamless integration with TypeScript.",
   "scripts": {
     "rollup": "rollup -c"
@@ -8,21 +11,25 @@
   "author": "José L. Rodrigues",
   "license": "ISC",
   "dependencies": {
-    "@types/react": "^18.0.33",
-    "react": "^18.2.0",
-    "typescript": "^5.0.4"
+    "styled-components": ">= 5"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-image": "^3.0.2",
     "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-terser": "^0.4.1",
     "@rollup/plugin-typescript": "^11.1.0",
+    "@types/react": "^18.0.33",
+    "@types/react-dom": "^18.0.11",
+    "@types/styled-components": "^5.1.26",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "rollup": "^3.20.2",
     "rollup-plugin-dts": "^5.3.0",
-    "rollup-plugin-minification": "^0.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
-    "tslib": "^2.5.0"
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.4"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -30,5 +37,10 @@
     "dist"
   ],
   "types": "dist/index.d.ts",
-  "type": "module"
+  "peerDependencies": {
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.11",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }
