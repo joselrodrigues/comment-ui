@@ -5,10 +5,9 @@
  * @param {number} maxLength - The maximum allowed number of characters.
  * @returns {boolean} True if the text has more characters than maxLength, false otherwise.
  */
-export const hasExceededCharLimit = (text:string, maxLength:number) => {
-    return text.length > maxLength;
-}
-
+export const hasExceededCharLimit = (text: string, maxLength: number) => {
+	return text.length > maxLength;
+};
 
 /**
  * Truncate the description text if it's longer than 100 characters and append "..." at the end.
@@ -17,6 +16,11 @@ export const hasExceededCharLimit = (text:string, maxLength:number) => {
  * @param {number} maxLength - The maximum allowed number of characters.
  * @returns {string} The truncated description text.
  */
-export const truncateDescription = (text: string, maxLength: number): string => {
-    return hasExceededCharLimit(text, maxLength) ? text.substring(0, maxLength) + '...' : text;
+export const truncateDescription = (
+	text: string,
+	maxLength: number
+): string => {
+	return hasExceededCharLimit(text, maxLength)
+		? text.substring(0, maxLength) + '...'
+		: text;
 };
