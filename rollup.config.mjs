@@ -34,7 +34,16 @@ export default [
             commonjs(),
             typescript({
                 tsconfig: "./tsconfig.json",
-                exclude: ["**/__tests__", "**/*.test.ts","**/*.test.tsx","**/*.spec.ts","**/*.spec.tsx", "**/*.stories.ts"]
+                esModuleInterop: true,
+                exclude: [
+                    "**/__tests__",
+                    "**/*.test.ts",
+                    "**/*.test.tsx",
+                    "**/*.spec.ts",
+                    "**/*.spec.tsx",
+                    "**/*.stories.ts",
+                    "**/*.stories.tsx",
+                ],
             }),
             postcss(),
             terser(),
@@ -42,7 +51,7 @@ export default [
         ],
     },
     {
-        input: "dist/esm/types/index.d.ts",
+        input: "src/index.ts",
         output: [{ file: "dist/index.d.ts", format: "esm" }],
         plugins: [dts()],
 

@@ -4,6 +4,7 @@
 # Output files
 /dist
 /build
+/coverage
 
 # Environment files
 /.env

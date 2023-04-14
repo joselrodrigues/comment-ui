@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/joselrodrigues"
   },
-  "version": "2.0.3",
+  "version": "2.0.8",
   "description": "A versatile and extensible React design system library tailored for building engaging and accessible comment interfaces. Featuring a comprehensive set of UI components, responsive design, and seamless integration with TypeScript.",
   "scripts": {
     "rollup": "rollup -c",

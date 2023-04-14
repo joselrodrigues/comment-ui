@@ -3,9 +3,8 @@ import type { Meta, StoryObj } from '@storybook/react';
 import CommentComponent from './index';
 
 const meta = {
-	title: 'Atoms/Comment',
+	title: 'Components/Atoms/Comment',
 	component: CommentComponent,
-	tags: ['autodocs'],
 } satisfies Meta<typeof CommentComponent>;
 
 export default meta;
