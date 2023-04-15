@@ -48,7 +48,10 @@ const CardDefault: React.FC<CardProps> = ({
 			<ButtonWrapper>
 				<Card.Button
 					text={showFullDescription ? 'Show Less' : 'Show More'}
-					onClick={toggleFullDescription}
+					onClick={(event: React.MouseEvent) => {
+						event.stopPropagation();
+						toggleFullDescription();
+					}}
 					disabled={!hasExceededCharLimit(description, maxLength)}
 				/>
 			</ButtonWrapper>

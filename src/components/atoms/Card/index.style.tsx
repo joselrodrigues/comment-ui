@@ -6,6 +6,8 @@ export const CardWrapper = styled.div`
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 	margin: 1rem;
 	padding: 1rem;
+	display: flex;
+	flex-direction: column;
 	width: 300px;
 	transition: 0.3s;
 	animation: ease-in-out;
@@ -28,6 +30,7 @@ export const CardUsername = styled.p`
 `;
 
 export const CardDescription = styled.p`
+	flex-grow: 1;
 	font-size: 1rem;
 	color: black;
 	line-height: 1.5;

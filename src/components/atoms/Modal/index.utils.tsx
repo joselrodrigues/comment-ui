@@ -24,7 +24,7 @@ const usePulse = (
 		const id = setTimeout(() => {
 			onClick();
 			setIsPulsing(false);
-		}, 500);
+		}, 200);
 		setTimeoutId(id);
 	};
 

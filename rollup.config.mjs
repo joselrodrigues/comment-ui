@@ -3,7 +3,6 @@ import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 
-// To handle css files
 import postcss from "rollup-plugin-postcss";
 
 import terser from "@rollup/plugin-terser";
@@ -55,6 +54,6 @@ export default [
         output: [{ file: "dist/index.d.ts", format: "esm" }],
         plugins: [dts()],
 
-        external: [/\.css$/], // telling rollup anything that is .css aren't part of type exports
+        external: [/\.css$/],
     },
 ]
