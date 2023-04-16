@@ -28,7 +28,7 @@
 ## About The Project
 
 
-This library is a comprehensive and highly customizable set of React components designed to simplify the development process of the comment-app.
+This library is a comprehensive and highly customizable set of React components designed to simplify the development process of the post-app.
 
 The inclusion of Storybook allows for an interactive and isolated environment to develop and showcase each UI component, facilitating design collaboration and component documentation. 
 
