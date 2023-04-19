@@ -1,5 +1,6 @@
 import React, { PropsWithChildren } from 'react';
 
+import { ReactComponent as Icon } from './assets/closeIcon.svg';
 import {
 	CloseIcon,
 	ModalBackdrop,
@@ -51,7 +52,7 @@ const Modal: React.FC<PropsWithChildren<ModalProps>> & ModalComposition = ({
 								onClick={handleClick}
 								data-testid="modal-closeIcon"
 							>
-								<div>X</div>
+								<Icon />
 							</CloseIcon>
 							{children}
 						</ModalContent>

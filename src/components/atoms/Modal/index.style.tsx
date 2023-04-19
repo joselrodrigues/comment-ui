@@ -47,6 +47,7 @@ export const ModalHeader = styled.h2`
 `;
 
 export const CloseIcon = styled.div`
+	transform: scale(0.7);
 	display: flex;
 	position: absolute;
 	top: 15px;
