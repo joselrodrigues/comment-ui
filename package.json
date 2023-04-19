@@ -10,6 +10,7 @@
     "storybook": "storybook dev -p 6006",
     "test": "jest",
     "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
     "build-storybook": "storybook build",
     "lint": "tsc --noEmit && eslint src/**/*.ts{,x} --cache --max-warnings=0",
     "lint:fix": "eslint src/**/*.ts{,x} --fix"
