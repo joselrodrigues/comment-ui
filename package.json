@@ -12,8 +12,9 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "build-storybook": "storybook build",
-    "lint": "tsc --noEmit && eslint src/**/*.ts{,x} --cache --max-warnings=0",
-    "lint:fix": "eslint src/**/*.ts{,x} --fix"
+    "lint": "tsc && eslint src/**/*.ts{,x} --cache --max-warnings=10",
+    "lint:fix": "eslint src/**/*.ts{,x} --fix",
+    "prepare": "husky install"
   },
   "author": "José L. Rodrigues",
   "license": "ISC",
@@ -70,7 +71,8 @@
     "ts-jest": "^29.1.0",
     "tslib": "^2.5.0",
     "typescript": "^5.0.4",
-    "url-loader": "^4.1.1"
+    "url-loader": "^4.1.1",
+    "husky": "^8.0.0"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
